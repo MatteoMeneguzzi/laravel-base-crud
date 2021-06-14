@@ -20,7 +20,7 @@
                         <td>{{ $comic->title }}</td>
                         <td>{{ $comic->series }}</td>
                         <td><img src="{{ $comic->thumb }}" alt=""></td>
-                        <td><a href="{{route('comics.show', $comic->id)}}">SHOW</a></td>
+                        <td><a href="{{route('comics.show', $comic->slug)}}">SHOW</a></td>
                         <td>EDIT</td>
                         <td>DELETE</td>
                     </tr>
