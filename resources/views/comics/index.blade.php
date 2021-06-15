@@ -21,13 +21,15 @@
                         <td>{{ $comic->series }}</td>
                         <td><img src="{{ $comic->thumb }}" alt=""></td>
                         <td><a href="{{route('comics.show', $comic->slug)}}">SHOW</a></td>
-                        <td>EDIT</td>
-                        <td>DELETE</td>
+                        <td><button><a href="{{ route('comics.edit', $comic->id)}}">EDIT</a></button></td>
+                        <td>
+                            <form action="{{ route('comics.destroy', $comic->id)}}">
+                                <button><a href="">DELETE</a></button></form></td>
                     </tr>
                 @endforeach
             </tbody>
         </table>
-            {{-- <div class="box-container">
+            <div class="box-container">
                 @foreach($comics as $comic)
                     <div class="box">
                         
@@ -38,7 +40,7 @@
                         <div>{{ $comic->price }}</div>
                     </div>
                 @endforeach
-            </div> --}}
+            </div>
 
             {{ $comics->links() }}
         
