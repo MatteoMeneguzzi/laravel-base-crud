@@ -4,7 +4,7 @@
     <div class="container">
         <h1>Add new comic</h1>
 
-        <form action="{{ route('comics.store') }}" method="POST"></form>
+        <form action="{{ route('comics.store') }}" method="POST">
             @csrf
 
             @method('POST')
@@ -27,8 +27,8 @@
             </div>
 
             {{-- <div class="box">
-                <label for="image">Image</label>
-                <input type="text" name="image" id="image">
+                <label for="thumb">Image</label>
+                <input type="text" name="thumb" id="thumb">
             </div> --}}
 
             <div class="box">
@@ -37,7 +37,7 @@
             </div>
 
             <button type="submit">Create</button>
-            
+            </form>
         <a href="{{ route('comics.index')}}">Back to archive</a>
     </div>
 @endsection
