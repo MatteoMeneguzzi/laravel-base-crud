@@ -21,8 +21,8 @@
             <div class="box">
                 <label for="type" class="control-label">Type</label>
                 <select name="type" id="type" class="form-control">
-                    <option value="comic book"></option>
-                    <option value="graphic novel"></option>
+                    <option value="comic book">comic book</option>
+                    <option value="graphic novel">graphic novel</option>
                 </select>
             </div>
 
